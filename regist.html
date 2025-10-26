@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar - Qelas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/logo2.png" height="30px"/>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Kelas</a></li>
+          <li><a href="#">Premium</a></li>
+          <li><a href="login.html" class="btn-login">Masuk</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Register Section -->
+    <section class="register-section">
+      <div class="register-box">
+        <h2>Buat Akun Baru</h2>
+        <p class="register-subtext">
+          Mulai perjalanan belajar Anda hari ini dengan Qelas.
+        </p>
+
+        <form id="nilaiForm" action="#" class="register-form">
+          <label for="namaDepan">Nama Depan</label>
+          <input
+            type="text"
+            id="namaDepan"
+            name="namaDepan"
+            placeholder="Nama depan Anda"
+            required
+          />
+
+          <label for="email">email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Nama belangkang anda"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+
+          <button type="submit" class="btn-primary full-width">
+            Daftar Sekarang
+          </button>
+
+          <p class="login-text">
+            Sudah punya akun?
+            <a href="login.html" class="login-link">Masuk di sini</a>
+          </p>
+        </form>
+      </div>
+
+      <div class="register-illustration">
+        <img src="assets/bgJumbo.png" alt="Astronaut Illustration" />
+      </div>
+    </section>
+  </body>
+</html>
