@@ -41,23 +41,15 @@
             required
           />
 
-          <label for="email">email</label>
+          <label for="namaBelakang">Nama Belakang</label>
           <input
             type="text"
-            id="email"
-            name="email"
+            id="namaBelakang"
+            name="namaBelakang"
             placeholder="Nama belangkang anda"
             required
           />
 
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="password"
-            required
-          />
 
           <button type="submit" class="btn-primary full-width">
             Daftar Sekarang
@@ -74,5 +66,21 @@
         <img src="assets/bgJumbo.png" alt="Astronaut Illustration" />
       </div>
     </section>
+    <script>
+      const form = document.getElementById("nilaiForm");
+      const hasilLog = document.getElementById("hasilLog");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const namaDepan = document.getElementById("namaDepan").value.trim();
+        const namaBelakang = document.getElementById("namaBelakang").value.trim();
+       
+        const namaLengkap = `${namaDepan} ${namaBelakang}`;
+
+        console.log(`Nama Lengkap : ${namaLengkap}`);
+        console.log(`Nilai Angka : ${nilaiAngka}`);
+      });
+    </script>
   </body>
 </html>
