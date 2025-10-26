@@ -50,6 +50,14 @@
             required
           />
 
+          <label for="nilaiAngka">Nilai Angka</label>
+          <input
+            type="number"
+            id="nilaiAngka"
+            name="nilaiAngka"
+            placeholder="Nilai angka"
+            required
+          />
 
           <button type="submit" class="btn-primary full-width">
             Daftar Sekarang
@@ -75,11 +83,21 @@
 
         const namaDepan = document.getElementById("namaDepan").value.trim();
         const namaBelakang = document.getElementById("namaBelakang").value.trim();
-       
+        const nilaiAngka = parseFloat(document.getElementById("nilaiAngka").value);
+
+        // Hitung nilai huruf
+        let nilaiHuruf;
+        if (nilaiAngka >= 90) nilaiHuruf = "A";
+        else if (nilaiAngka >= 80) nilaiHuruf = "B";
+        else if (nilaiAngka >= 70) nilaiHuruf = "C";
+        else if (nilaiAngka >= 60) nilaiHuruf = "D";
+        else nilaiHuruf = "E";
+
         const namaLengkap = `${namaDepan} ${namaBelakang}`;
 
         console.log(`Nama Lengkap : ${namaLengkap}`);
         console.log(`Nilai Angka : ${nilaiAngka}`);
+        console.log(`Nilai Huruf : ${nilaiHuruf}`);
       });
     </script>
   </body>
